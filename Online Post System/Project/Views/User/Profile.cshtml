@@ -1,0 +1,78 @@
+﻿@model ONLINE_POST.Models.PersonalInformation
+@{
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<style>
+    .profile-info {
+        border: 2px groove white;
+        box-shadow: 0px 0px 3px black, inset 0px 0px 2px 2px black;
+        padding: 20px;
+        margin: auto;
+        width: 50%;
+    }
+
+    #changePasswordBtn {
+        margin-top: 10px;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+</style>
+
+<div class="container-fluid py-5 mb-5">
+    <div class="container">
+        <h2 class="text-primary text-center">Profile Information</h2>
+        <div class="profile-info mt-4">
+            <table>
+                <tr>
+                    <th>Username</th>
+                    <td>@Model.PUserName</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>@Model.PEmail</td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td>@Model.PPassword  <a id="changePasswordBtn" class="btn btn-primary" onclick="changePassword('@Model.PId')"> Change Password </a></td>
+                </tr>
+                <tr>
+                    <th>Status</th>
+                    <td>@if (@Model.status=="on")
+                        {
+                            <p>Activated</p>
+                        }
+                        else
+                        {
+                            <p>DeActivated</p>
+                        }
+                    </td>
+
+                </tr>
+              
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    function changePassword(userid) {
+        var result = confirm("Are you sure you want to change this password");
+        if (result) {
+            window.location.href = "/U_functionality/c_pass/" + userid; // Redirect to the delete action
+        }
+    }
+</script>

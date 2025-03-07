@@ -1,0 +1,295 @@
+﻿@model package;
+@using Newtonsoft.Json;
+@{
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+    var package = (List<package>)TempData["package"];
+    var user_data = Context.Session.GetString("User");
+    var user = JsonConvert.DeserializeObject<PersonalInformation>(user_data);
+}
+<!-- Carousel Start -->
+<div class="container-fluid px-0">
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox" id="carousel-caption">
+            <div class="carousel-item active">
+                <img src="~/auth/img/carousel1.jpg" class="img-fluid" alt="First slide">
+                <div class="carousel-caption">
+                    <div class="container carousel-content">
+                        <h6 class="text-secondary h4 animated fadeInUp">Best Services</h6>
+                        <h1 class="text-white display-1 mb-4 animated fadeInRight">Efficiency Post Tech</h1>
+                        <p class="mb-4 text-white fs-5 animated fadeInDown">Enjoy hassle-free courier services – easily send and receive packages from the convenience of your home</p>
+                        <a asp-action="place_courier" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Place Courier</button></a>
+                        <a asp-action="Contact" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/auth/img/carousel2.jpg" class="img-fluid" alt="Second slide">
+                <div class="carousel-caption">
+                    <div class="container carousel-content">
+                        <h6 class="text-secondary h4 animated fadeInUp">Best Services</h6>
+                        <h1 class="text-white display-1 mb-4 animated fadeInLeft">Post Accessibility</h1>
+                        <p class="mb-4 text-white fs-5 animated fadeInDown">Enjoy hassle-free courier services – easily send and receive packages from the convenience of your home</p>
+                        <a asp-action="place_courier" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Place Courier</button></a>
+                        <a asp-action="Contact" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!-- Carousel End -->
+<!-- Fact Start -->
+<div class="container-fluid bg-secondary py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                <div class="d-flex counter">
+                    <h1 class="me-3 text-primary counter-value">99</h1>
+                    <h5 class="text-white mt-1">Success in getting happy customer</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                <div class="d-flex counter">
+                    <h1 class="me-3 text-primary counter-value">25</h1>
+                    <h5 class="text-white mt-1">Thousands of successful business</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                <div class="d-flex counter">
+                    <h1 class="me-3 text-primary counter-value">120</h1>
+                    <h5 class="text-white mt-1">Total clients who love HighTech</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                <div class="d-flex counter">
+                    <h1 class="me-3 text-primary counter-value">5</h1>
+                    <h5 class="text-white mt-1">Stars reviews given by satisfied clients</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fact End -->
+<!-- About Start -->
+<div class="container-fluid py-5 my-5">
+    <div class="container pt-5">
+        <div class="row g-5">
+            <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                <div class="h-100 position-relative">
+                    <img src="~/auth/img/about-1.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
+                    <div class="position-absolute w-75" style="top: 25%; left: 25%;">
+                        <img src="~/auth/img/about-2.jpg" class="img-fluid w-100 rounded" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                <h5 class="text-primary">About Us</h5>
+                <h1 class="mb-4">About PostTech Agency And It's Innovative IT Solutions</h1>
+                <p>Post Management System streamlines content handling for efficient organization. This user-friendly platform guides you through every step, facilitating effective organization and retrieval of your posts. Efficiently categorize, edit, and track your content's performance. Real-time collaboration enables seamless teamwork in a centralized space for your team. The system's tools allow multiple users to engage in simultaneous editing, fostering smooth communication and coordination within your team.</p>
+                <a asp-action="About" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+<!-- Services Start -->
+<div class="container-fluid services py-5 mb-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Services</h5>
+            <h1>Availabe Packages</h1>
+        </div>
+        <div class="row g-5 services-inner">
+            @if (package.Count > 0)
+            {
+                @foreach (var data in package)
+                {
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <h2><b>@data.p_name</b></h2>
+                                    <span><i class="fa-7x mb-4 text-primary">@data.p_dis%</i></span>
+                                    <h6 class="text-danger">Service Charges off</h6>
+                                    <h4 class="mb-3">Price : @data.p_price$</h4>
+                                    <p class="mb-4">The package will remain active for 10 days, and during this period, a discount equivalent to a certain percentage of the current charges for the package will be applied as part of the service.</p>
+                                    <form asp-action="CreatePayment" asp-controller="U_functionality" method="post">
+                                        <input type="hidden" name="id" value="@user.PId" />
+                                        <input type="hidden" asp-for="p_name" value="@data.p_name"/>                                
+                                        <input type="hidden" asp-for="p_price" value="@data.p_price"/>
+                                        <input type="hidden" asp-for="p_dis" value="@data.p_dis" />
+                                        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                        data-key="pk_test_51NpGdAIPIXuAWKzWVCxwgljd4rMplP4wZ86nsdOw2D0eODY4fTFqdbh2WSnndPjvLFAz9vRFhgfuhZFopGJvFLRT00CxTVJzaV"
+                                        data-amount="@(data.p_price * 100)" data-name="@data.p_name"
+                                        data-description="Online Post Package" data-locale="auto"
+                                        data-currency="usd">
+                                        </script>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="col-md-12 col-lg-12 wow fadeIn" data-wow-delay=".3s">
+                    <div class="services-item st12 bg-light">
+                        <div class="text-danger text-center">No Packages Availabe</div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+<!-- Blog Start -->
+<div class="container-fluid blog py-5 mb-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Our Blog</h5>
+            <h1>Latest Blog & News</h1>
+        </div>
+        <div class="row g-5 justify-content-center">
+            <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="blog-item position-relative bg-light rounded">
+                    <img src="~/auth/img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Web Designer</span>
+                    <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                        <img src="~/auth/img/hamas.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                        <h5 class="">Syed Hammas Ali Hasan</h5>
+                        <span class="text-secondary">30 Nov 2004</span>
+                        <p class="py-2">Web Developer of Php</p>
+                    </div>
+                    <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                        <p class="text-white text-center"> Online Post Mangement System</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="blog-item position-relative bg-light rounded">
+                    <img src="~/auth/img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Web Developer</span>
+                    <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; left: 15px;">Team Lead</span>
+                    <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                        <img src="~/auth/img/usman.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                        <h5 class="">Syed Usman Ahmed Bilgrami</h5>
+                        <span class="text-secondary">28 June 2004</span>
+                        <p class="py-2">Web Developer of Asp and Php</p>
+                    </div>
+                    <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                        <p class="text-white text-center"> Online Post Mangement System</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
+                <div class="blog-item position-relative bg-light rounded">
+                    <img src="~/auth/img/blog-3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Web Developer</span>
+                    <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                        <img src="~/auth/img/haider.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                        <h5 class="">Haider Faraz Warraich</h5>
+                        <span class="text-secondary">10 Dec 2002</span>
+                        <p class="py-2">Web Developer of Asp</p>
+                    </div>
+                    <div class="blog-coments d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                        <p class="text-white text-center"> Online Post Mangement System</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+<!-- Team Start -->
+
+<!-- Team End -->
+<!-- Contact Start -->
+<div class="container-fluid py-5 mb-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Get In Touch</h5>
+            <h1 class="mb-3">Contact for any query</h1>
+        </div>
+        <div class="contact-detail position-relative p-5">
+            <div class="row g-5 mb-5 justify-content-center">
+                <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                    <div class="d-flex bg-light p-3 rounded">
+                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                            <i class="fas fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h4 class="text-primary">Address</h4>
+                            <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5">aptech NN2 karachi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                    <div class="d-flex bg-light p-3 rounded">
+                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                            <i class="fa fa-phone text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h4 class="text-primary">Call Us</h4>
+                            <a class="h5" href="tel:+0123456789" target="_blank">+92-331-1288350</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
+                    <div class="d-flex bg-light p-3 rounded">
+                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                            <i class="fa fa-envelope text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h4 class="text-primary">Email Us</h4>
+                            <a class="h5" href="mailto:info@example.com" target="_blank">Post@example.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                    <div class="p-5 h-100 rounded contact-map">
+                        <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4710403339755!2d-73.82241512404069!3d40.685622471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1686493221834!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                    <div class="p-5 rounded contact-form">
+                        <form asp-action="contact_form" asp-controller="Contact">
+                            <div class="mb-4">
+                                <input type="text" class="form-control border-0 py-3" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" class="form-control border-0 py-3" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-4">
+                                <input type="text" class="form-control border-0 py-3" name="msg" placeholder="Your Message" required>
+                            </div>
+                            <div class="text-start">
+                                <button class="btn bg-primary text-white py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

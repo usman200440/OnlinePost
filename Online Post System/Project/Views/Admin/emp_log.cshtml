@@ -1,0 +1,67 @@
+﻿@using ONLINE_POST.Models.extras.join
+@model List<emp_branch>
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<div class="breadcrumb-wrap mb-20">
+    <div class="d-md-flex d-block justify-content-between align-items-center">
+        <div class="left">
+            <h1>Log</h1>
+        </div>
+        <div class="right">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index">Dashboard</a></li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">Delete History</li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">Employee</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="col-xl-12 col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-heading">
+            <span>View Log Employees</span>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Branch</th>
+                            <th>City</th>
+                            <th colspan="2">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var e in Model)
+                        {
+                            <tr>
+                                <td>@e.emp_name</td>
+                                <td>@e.emp_email</td>
+                                <td>@e.branch</td>
+                                <td>@e.City</td>
+                                <td><a class="btn btn-danger text-white" href="#" onclick="confirmDelete('@e.e_id')">DELETE</a></td>
+                                <td><a class="btn btn-success text-white" asp-action="recover_emp" asp-controller="A_Functionality" asp-route-id="@e.e_id">RECOVER</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function confirmDelete(empid) {
+        var result = confirm("Are you sure you want to delete this Employee delete data?");
+        if (result) {
+            window.location.href = "/A_Functionality/del_emp_log/" + empid; // Redirect to the delete action
+        }
+    }
+</script>

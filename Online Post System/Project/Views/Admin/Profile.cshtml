@@ -1,0 +1,74 @@
+﻿@model ONLINE_POST.Models.PersonalInformation
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+    <div class="breadcrumb-wrap mb-20">
+        <div class="d-md-flex d-block justify-content-between align-items-center">
+            <div class="left">
+                <h1>Profile</h1>
+            </div>
+            <div class="right">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-action="Index">Dashboard</a></li>
+                        <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                        <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                        <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                        <li class="breadcrumb-item active" aria-current="page">Update</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+<div class="col-xl-12 col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-heading">
+            <span>Create</span>
+        </div>
+        <div class="panel-body">
+            <form asp-action="Profile" asp-controller="A_Functionality" method="post">
+                <input type="hidden" asp-for="PId" value="@Model.PId" />
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="PUserName" class="form-label">Username:</label>
+                            <input asp-for="PUserName" class="form-control" value="@Model.PUserName" readonly />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="PEmail" class="form-label">Email:</label>
+                            <input asp-for="PEmail" class="form-control" value="@Model.PEmail" readonly />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="PPassword" class="form-label">Password:</label>
+                            <input asp-for="PPassword" class="form-control" value="@Model.PPassword" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="status" class="form-label">Status:</label>
+                            <input asp-for="status" class="form-control" value="@Model.status" readonly/>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <br />
+                <button type="submit" class="btn btn-primary">Change Password</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+

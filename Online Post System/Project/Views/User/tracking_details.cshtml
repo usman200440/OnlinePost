@@ -1,0 +1,134 @@
+﻿@model delivery_history
+@{
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<style>
+    .delivery-info {
+        border: 2px groove white;
+        box-shadow: 0px 0px 3px black,inset 0px 0px 2px 2px black;
+        padding: 20px;
+        margin: auto;
+        width: 50%;
+    }
+    .delivery-info strong{
+            color: #0d6efd
+    }
+</style>
+
+<div class="container-fluid py-5 mb-5">
+    <div class="container">
+        <h2 class="text-primary text-center">Tracking Information</h2>
+
+        <div class="delivery-info mt-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <strong>Tracking Number:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.Tracking_Number
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Date of Posting:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.DateOfPosting.ToString("yyyy-MM-dd HH:mm:ss")
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Weight:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.Weight
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Service Charges:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.service_charges
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Basic Charges:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.normal_charges
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Destination Address:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.DestinationAddress
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Sender Address:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.SenderAddress
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Contact Number:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.Contact_Number
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Package Type:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.package_type
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Branch ID:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.branch_name
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Status :</strong>
+                </div>
+                <div class="col-md-8 bg-dark text-white">
+                    @Model.status
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Total Price:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.Total_Price $
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

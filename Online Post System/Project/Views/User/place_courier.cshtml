@@ -1,0 +1,99 @@
+﻿@using ONLINE_POST.Models.extras
+@model Deliverable;
+@{
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+    var branch = (List<branch>)TempData["branch"];
+    var pay = (List<payment>)TempData["pay"];
+    var d_type = (List<servicetype>)TempData["d_type"];
+    var form = (form) TempData["form"];
+}
+<div class="container-fluid px-0">
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" role="listbox" id="carousel-caption">
+            <div class="carousel-item active">
+                <img src="~/auth/img/abcon.jpg" class="img-fluid" alt="First slide">
+                <div class="carousel-caption">
+                    <h1 class="display-2 text-white mb-4 animated slideInDown">Place Courier</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-5 mb-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Place Courier</h5>
+            <h1 class="mb-3">PostTech</h1>
+        </div>
+        <div class="contact-detail position-relative p-5">
+            <div class="col-lg-12 wow fadeIn" data-wow-delay=".5s">
+                <div class="p-5 rounded contact-form">
+                    @if (form != null && form.status=="on") {
+                        <form asp-action="courier_details" asp-controller="U_functionality">
+                            <div class="row mb-4">
+                                <div class="col-sm-2">
+                                    <input asp-for="Weight" class="form-control border-0 py-3" placeholder="Weight" required pattern="^([1-9]|[1-9][0-9]|[1-4][0-9][0-9]|500)(\.\d+)?$" title="Please enter a valid weight (numeric value) between 1 and 500">
+                                </div>
+                                <div class="col-sm-4">
+                                    <input asp-for="Contact_Number" class="form-control border-0 py-3" placeholder="Contact" required pattern="(^\+[0-9]{1,4}|[0-9]{1,4})[0-9]{10}$" title="Please enter a valid phone number">
+                                </div>
+                                <div class="col-sm-3">
+                                    <input asp-for="DestinationAddress" class="form-control border-0 py-3" placeholder="Destination Address" required>
+                                </div>
+                                <div class="col-sm-3">
+                                    <input asp-for="SenderAddress" class="form-control border-0 py-3" placeholder="Sender Address" required>
+                                </div>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col-sm-4">
+                                    <select asp-for="branch_id" class="form-control border-0 py-3" id="branch" required>
+                                        <option value="" selected hidden>Choose Branch...</option>
+                                        @foreach (var b in branch)
+                                        {
+                                            <option value="@b.b_id">@b.b_name</option>
+                                        }
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <select asp-for="TypeOfDelivery" class="form-control border-0 py-3" id="Delivery_type" required>
+                                        <option value="" selected hidden>Choose Delivery Type...</option>
+                                        @foreach (var d in d_type)
+                                        {
+                                            <option value="@d.s_id">@d.service_name</option>
+                                        }
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <select asp-for="pay_id" class="form-control border-0 py-3" id="Pay_id" required>
+                                        <option value="" selected hidden>Choose Payment Type...</option>
+                                        @foreach (var p in pay)
+                                        {
+                                            <option value="@p.p_id">@p.p_name</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="text-start">
+                                <button class="btn bg-primary text-white py-3 px-5" type="submit">Create Bill</button>
+                            </div>
+                        </form>
+                    }
+                    else
+                    {
+                        <p class="text-danger"><b>"Notice: </b> We would like to inform our valued users that our website is currently 
+                            undergoing updates and enhancements. We are working to improve your overall experience 
+                            by updating our setup. Following this update, the courier form, which is currently disabled,
+                            will be reactivated soon. Our efforts aim to provide you with a better and smoother online experience.
+                            During this period, you may experience some temporary disruptions or changes. We appreciate your patience,
+                            and we hope you will benefit from the upcoming improvements. Thank you!"
+                        </p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

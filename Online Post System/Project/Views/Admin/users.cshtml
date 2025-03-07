@@ -1,0 +1,81 @@
+﻿@using ONLINE_POST.Models.extras.join
+@model List<PersonalInformation>
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+    int number=1;
+}
+<div class="breadcrumb-wrap mb-20">
+    <div class="d-md-flex d-block justify-content-between align-items-center">
+        <div class="left">
+            <h1>Users</h1>
+        </div>
+        <div class="right">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index">Dashboard</a></li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">Users</li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">View</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="col-xl-12 col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-heading">
+            <span>View Users</span>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th colspan="2">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var u in Model)
+                        {
+                            <tr>
+                                <td>@(number++)</td>
+                                <td>@u.PUserName</td>
+                                <td>@u.PEmail</td>
+                                <td>@u.status</td>
+                                <td>
+                                    <a class="btn btn-danger text-white" href="#" onclick="confirmDelete('@u.PId')">DELETE</a>
+                                </td>
+                                <td>
+                                    <a class="btn btn-primary text-white" href="#" onclick="convertStatus('@u.PId')">CONVERT STATUS</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function confirmDelete(userId) {
+        var result = confirm("Are you sure you want to delete this user?");
+        if (result) {
+            window.location.href = "/A_Functionality/del_user/" + userId; // Redirect to the delete action
+        }
+    }
+
+    function convertStatus(userId) {
+        var result = confirm("Are you sure you want to convert the status of this user?");
+        if (result) {
+            // Add code to perform the status conversion or redirection
+            window.location.href = "/A_Functionality/upd_user/" + userId;
+        }
+    }
+</script>

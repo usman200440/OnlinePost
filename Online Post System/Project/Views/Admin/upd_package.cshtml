@@ -1,0 +1,57 @@
+﻿@model package;
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="breadcrumb-wrap mb-20">
+    <div class="d-md-flex d-block justify-content-between align-items-center">
+        <div class="left">
+            <h1>Charges</h1>
+        </div>
+        <div class="right">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index">Dashboard</a></li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">Charges</li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">Packages</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
+@if (Model != null)
+{
+    <div class="col-xl-12 .col-lg-12">
+        <div class="panel mb-10">
+            <div class="panel-heading">
+                <span>Create</span>
+            </div>
+            <div class="panel-body">
+                <form class="row g-3" asp-action="upd_package" asp-controller="A_Functionality">
+                    <input type="hidden" asp-for="p_id" value="@Model.p_id"/>
+                    <div class="col-md-4">
+                        <label for="inputEmail1" class="form-label">Package_Name</label>
+                        <input asp-for="p_name" value="@Model.p_name" class="form-control" placeholder="Enter Package Name" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputEmail1" class="form-label">Package_Discount</label>
+                        <input asp-for="p_dis" value="@Model.p_dis" class="form-control" placeholder="Enter Package Discount" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputEmail1" class="form-label">Package_Price</label>
+                        <input asp-for="p_price" value="@Model.p_price" class="form-control" placeholder="Enter Package Price" required>
+                    </div>
+
+                    <br><br>
+                    <div class="btn-box justify-content-end">
+                        <button type="submit" class="btn btn-primary">Update</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}

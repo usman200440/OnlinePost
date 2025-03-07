@@ -1,0 +1,145 @@
+﻿@model Deliverable
+@{
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+    var branch= (branch) TempData["branch"];
+    var pay = (payment)TempData["pay"];
+    var s_type = (servicetype)TempData["s_type"];
+    var charge = (charge)TempData["charge"];
+}
+
+<style>
+    .delivery-info {
+        border: 2px groove white;
+        box-shadow:0px 0px 3px black,inset 0px 0px 2px 2px black; 
+        padding: 20px;
+        margin: auto;
+        width: 50%;
+    }
+</style>
+
+<div class="container-fluid py-5 mb-5">
+    <div class="container">
+        <h2 class="text-primary text-center">Delivery Information</h2>
+
+        <div class="delivery-info mt-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <strong>Tracking Number:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.Tracking_Number
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Date of Posting:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.DateOfPosting.ToString("yyyy-MM-dd HH:mm:ss")
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Weight:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.Weight
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Type of Delivery:</strong>
+                </div>
+                <div class="col-md-8">
+                    @s_type.service_name
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Payment Type:</strong>
+                </div>
+                <div class="col-md-8">
+                    @pay.p_name
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Destination Address:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.DestinationAddress
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Sender Address:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.SenderAddress
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Contact Number:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.Contact_Number
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Package Type:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.package_type
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Branch ID:</strong>
+                </div>
+                <div class="col-md-8">
+                    @branch.b_name
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <strong>Total Price:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.Total_Price $
+                </div>
+            </div>
+
+            <div class="row mt-4 text-center">
+                <form asp-action="confirmation_bill" asp-controller="U_functionality" method="post">
+                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                            data-key="pk_test_51NpGdAIPIXuAWKzWVCxwgljd4rMplP4wZ86nsdOw2D0eODY4fTFqdbh2WSnndPjvLFAz9vRFhgfuhZFopGJvFLRT00CxTVJzaV"
+                            data-amount="@(Model.Total_Price * 100)" data-name="Courier Place"
+                            data-description="Online Post System" data-locale="auto"
+                            data-currency="usd">
+                    </script>
+                </form>
+            </div>
+            <!-- Add more rows for other properties as needed -->
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid py-3 bg-light">
+    <div class="container text-center">
+        <p class="text-muted">
+            Notice: @s_type.service_name charges are @s_type.service_charges $ @Model.Weight weight charges are @charge.c_rate; 
+        </p>
+    </div>
+</div>

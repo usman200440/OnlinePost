@@ -1,0 +1,52 @@
+﻿@using ONLINE_POST.Models.extras
+@using ONLINE_POST.Models.extras.join
+@model form
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+    int number = 1;
+}
+<div class="breadcrumb-wrap mb-20">
+    <div class="d-md-flex d-block justify-content-between align-items-center">
+        <div class="left">
+            <h1>Form - Status</h1>
+        </div>
+        <div class="right">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index">Dashboard</a></li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">Form</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="col-xl-12 col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Stauts</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      
+                            <tr>
+                                <td>@(number++)</td>
+                                <td>@Model.f_name</td>
+                                <td>@Model.status</td>
+                                <td><a class="btn btn-primary text-white" asp-action="f_view" asp-controller="A_Functionality" asp-route-id="@Model.f_id">CONVERT STATUS</a></td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

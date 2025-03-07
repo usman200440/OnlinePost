@@ -1,0 +1,102 @@
+﻿@model charge;
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+    var number = 1;
+    var charge = (List<charge>)TempData["charge"];
+}
+<div class="breadcrumb-wrap mb-20">
+    <div class="d-md-flex d-block justify-content-between align-items-center">
+        <div class="left">
+            <h1>Charge</h1>
+        </div>
+        <div class="right">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index">Dashboard</a></li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">Create</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="col-xl-12 .col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-heading">
+            <span>Create</span>
+        </div>
+        <div class="panel-body">
+            <form class="row g-3" asp-action="s_charge" asp-controller="A_functionality">
+                <div class="col-md-6">
+                    <label asp-for="min_weight" class="form-label">Min Weight</label>
+                    <input asp-for="min_weight" min="0" max="500" class="form-control" placeholder="Min Weight in kg" required>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="max_weight" class="form-label">Max Weight</label>
+                    <input asp-for="max_weight" min="0" max="500" class="form-control" placeholder="Max Weight in kg" required>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="c_rate" class="form-label">Charges</label>
+                    <input asp-for="c_rate" min="0" class="form-control" placeholder="Insert Charges" required>
+                </div>
+              
+                <br><br>
+                <div class="btn-box justify-content-end">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+                    @* view *@
+
+<div class="col-xl-12 col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-heading">
+            <span>View Packages</span>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Min Weight</th>
+                            <th>Max Weight</th>
+                            <th>Charge</th>
+                            <th colspan="2">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var c in charge)
+                        {
+                            <tr>
+                                <td>@(number++)</td>
+                                <td>@c.min_weight KG</td>
+                                <td>@c.max_weight KG</td>
+                                <td>@c.c_rate $</td>
+                                <td>
+                                    <a class="btn btn-danger text-white" href="#" onclick="confirmDelete('@c.c_id')">DELETE</a>
+                                </td>
+                                <td>
+                                    <a class="btn btn-success text-white" asp-action="upd_charge" asp-controller="Admin" asp-route-id="@c.c_id">UPDATE</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function confirmDelete(chargeId) {
+        var result = confirm("Are you sure you want to delete this charge?");
+        if (result) {
+            window.location.href = "/A_Functionality/del_charge/" + chargeId; // Redirect to the delete action
+        }
+    }
+</script>

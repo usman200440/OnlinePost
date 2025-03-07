@@ -1,0 +1,96 @@
+﻿@model servicetype;
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+    var number = 1;
+    var service = (List<servicetype>)TempData["service"];
+}
+<div class="breadcrumb-wrap mb-20">
+    <div class="d-md-flex d-block justify-content-between align-items-center">
+        <div class="left">
+            <h1>Charge</h1>
+        </div>
+        <div class="right">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index">Dashboard</a></li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">Create</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="col-xl-12 .col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-heading">
+            <span>Create</span>
+        </div>
+        <div class="panel-body">
+            <form class="row g-3" asp-action="s_type" asp-controller="A_functionality">
+                <div class="col-md-6">
+                    <label asp-for="service_name" class="form-label">Service Name</label>
+                    <input asp-for="service_name" class="form-control" placeholder="Enter Service Name" required>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="service_charges" class="form-label">Service Charges</label>
+                    <input asp-for="service_charges" min="0" class="form-control" placeholder="Enter Service Charges" required>
+                </div>
+
+                <br><br>
+                <div class="btn-box justify-content-end">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@* view *@
+
+<div class="col-xl-12 col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-heading">
+            <span>View Packages</span>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Service Name</th>
+                            <th>Service Charges</th>
+                            <th colspan="2">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var c in service)
+                        {
+                            <tr>
+                                <td>@(number++)</td>
+                                <td>@c.service_name</td>
+                                <td>@c.service_charges $</td>
+                                <td>
+                                    <a class="btn btn-danger text-white" href="#" onclick="confirmDelete('@c.s_id')">DELETE</a>
+                                </td>
+                                <td>
+                                    <a class="btn btn-success text-white" asp-action="upd_service" asp-controller="Admin" asp-route-id="@c.s_id">UPDATE</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function confirmDelete(serviceId) {
+        var result = confirm("Are you sure you want to delete this service?");
+        if (result) {
+            window.location.href = "/A_Functionality/del_service/" + serviceId; // Redirect to the delete action
+        }
+    }
+</script>

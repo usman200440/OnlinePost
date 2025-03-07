@@ -1,0 +1,142 @@
+﻿@using Newtonsoft.Json
+@{
+    var data = Context.Session.GetString("User");
+    var user = JsonConvert.DeserializeObject<PersonalInformation>(data);
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="shortcut icon" href="~/admin/assets/images/logo.png">
+    <link rel="stylesheet" href="~/admin/assets/css/animate.min.css">
+    <link rel="stylesheet" href="~/admin/assets/bootstrap-icon/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/admin/assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="~/admin/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/admin/assets/css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <button class="sidebar-collapse-mini d-xl-none d-block"><i class="bi bi-list"></i></button>
+        <!-- main sidebar -->
+        <div class="fixed-sidebar sidebar-mini">
+            <div class="logo">
+                <button class="sidebar-collapse"><i class="bi bi-list"></i></button>
+                <a asp-action="Index"><img src="~/admin/assets/images/logo.png" alt="LOGO"></a>
+            </div>
+            <!-- sidebar menu -->
+            <div class="menu">
+                <div class="custom-scroll">
+                    <div class="sidebar-menu">
+                        <ul>
+                            <li class="sidebar-title"><span>Menu</span></li>
+                            <li class="sidebar-item"><a asp-action="Index" asp-controller="Admin" class="sidebar-link active" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard" tabindex="0"><i class="bi bi-grid-fill"></i> <span>Dashboard</span></a></li>
+
+                            <li class="sidebar-title"><span>Participant</span></li>
+                            <li class="sidebar-item has-sub">
+                                <a role="button" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Employee" tabindex="0"><i class="bi bi-person-plus-fill"></i> <span>Employee</span></a>
+                                <ul class="sub-menu">
+                                    <li><a asp-action="e_create" asp-controller="Admin" class="sub-menu-item">Appoint</a></li>
+                                    <li><a asp-action="e_view" asp-controller="Admin" class="sub-menu-item">View</a></li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-item has-sub">
+                                <a role="button" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Users" tabindex="0"><i class="bi bi-person-fill"></i> <span>Users</span></a>
+                                <ul class="sub-menu">
+                                    <li><a asp-action="users" asp-controller="Admin" class="sub-menu-item">View</a></li>
+                                    <li><a asp-action="Feedback" asp-controller="Admin" class="sub-menu-item">Feedback</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="sidebar-title"><span>Extras</span></li>
+                            
+                            <li class="sidebar-item"><a asp-action="b_create" asp-controller="Admin" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Branches" tabindex="0"><i class="bi bi-egg-fill"></i> <span>Branch</span></a></li>
+                            <li class="sidebar-item has-sub">
+                                <a role="button" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Charges" tabindex="0"><i class="bi bi-bookmark-dash-fill"></i> <span>Charges & status</span></a>
+                                <ul class="sub-menu">
+                                    <li><a asp-action="s_charge" asp-controller="admin" class="sub-menu-item">Service Charges</a></li>
+                                    <li><a asp-action="packages" asp-controller="admin" class="sub-menu-item">Packages</a></li>
+                                    <li><a asp-action="s_type" asp-controller="admin" class="sub-menu-item">Delivery Type</a></li>
+                                    <li><a asp-action="payment" asp-controller="admin" class="sub-menu-item">Payment Type</a></li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-item"><a asp-action="s_view" asp-controller="Admin" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Shipment" tabindex="0"><i class="bi bi-egg-fill"></i> <span>Shipment</span></a></li>
+                            <li class="sidebar-item"><a asp-action="f_view" asp-controller="Admin" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Form" tabindex="0"><i class="bi bi-bookmark-dash-fill"></i><span>Form Status</span></a></li>
+                            <li class="sidebar-item has-sub">
+                                <a role="button" class="sidebar-link" data-bs-toggle="tooltip" data-bs-placement="right" title="Logs" tabindex="0"><i class="bi bi-caret-right"></i> <span>Recovery</span></a>
+                                <ul class="sub-menu">
+                                    <li><a asp-action="emp_log" asp-controller="Admin" class="sub-menu-item">Employee</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar menu -->
+        </div>
+        <!-- main sidebar -->
+        <div class="main-content">
+            <div class="top-boxes mb-10">
+                <div class="row g-10">
+                    <div class="col-xl-12 col-lg-12 col-sm-12 user">
+                        <div id="user-dropdown" onclick="toggleLogoutDropdown()">@user.PUserName ▼</div>
+
+                        <div id="logout-dropdown">
+                            <a asp-action="logout" asp-controller="Auth">Logout</a>
+
+                            <a asp-action="Profile" asp-controller="Admin">Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @{
+                var successMsg = Context.Request.Cookies["success-msg"];
+                if (!string.IsNullOrEmpty(successMsg))
+                {
+                    <div id="message" class="fixed-msg text-center bg-success text-white p-2 w-50 mt-3">
+                        @successMsg
+                    </div>
+                }
+
+                var errorMsg = Context.Request.Cookies["error-msg"];
+                if (!string.IsNullOrEmpty(errorMsg))
+                {
+                    <div id="message" class="fixed-msg text-center bg-danger text-white p-2 w-50 mt-3">
+                        @errorMsg
+                    </div>
+                }
+
+                var infoMsg = Context.Request.Cookies["info-msg"];
+                if (!string.IsNullOrEmpty(infoMsg))
+                {
+                    <div id="message" class="fixed-msg text-center bg-info text-dark p-2 w-50 mt-3">
+                        @infoMsg
+                    </div>
+                }
+            }
+	
+    <div>
+        @RenderBody()
+  </div>
+        </div>
+
+        <script src="~/admin/assets/js/jquery-3.6.0.min.js"></script>
+        <script src="~/admin/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="~/admin/assets/js/apexcharts.js"></script>
+        <script src="~/admin/assets/js/bootstrap.bundle.min.js"></script>
+        <script src="~/admin/assets/js/main.js"></script>
+        <script src="~/admin/assets/js/chart-init.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Fade out the message div after 5 seconds
+                setTimeout(function () {
+                    $('#message').fadeOut();
+                }, 3000);
+            });
+        </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+﻿@using ONLINE_POST.Models.extras.join
+@model orders
+@{
+    Layout = "~/Views/Shared/EmployeeLayout.cshtml";
+    int number = 1;
+}
+<style>
+    .order-info {
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+    }
+
+        .order-info strong {
+            color: #007bff; /* Set the text color to blue */
+        }
+</style>
+<div class="breadcrumb-wrap mb-20">
+    <div class="d-md-flex d-block justify-content-between align-items-center">
+        <div class="left">
+            <h1>Employee</h1>
+        </div>
+        <div class="right">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index">Dashboard</a></li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">Employee</li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">View</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="col-xl-12 col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-heading">
+            <span>View <span class="text-primary">Details</span></span>
+    </div>
+        <div class="panel-body">
+            <div class="order-info mt-4">
+            <strong>Tracking Number:</strong> @Model.Tracking_Number<br>
+            <strong>Date of Posting:</strong> @Model.DateOfPosting.ToShortDateString()<br>
+            <strong>Weight:</strong> @Model.Weight<br>
+            <strong>Destination Address:</strong> @Model.DestinationAddress<br>
+            <strong>Sender Address:</strong> @Model.SenderAddress<br>
+            <strong>Contact Number:</strong> @Model.Contact_Number<br>
+            <strong>Branch:</strong> @Model.branch_name<br>
+            <strong>Date Received:</strong> @Model.DateReceived.ToShortDateString()<br>
+            <strong>Date Delivered:</strong> @Model.DateDelivered.ToShortDateString()<br>
+            <strong>Package Type:</strong> @Model.package_type<br>
+            <strong>Normal Charges:</strong> @Model.normal_charges<br>
+            <strong>Service Charges:</strong> @Model.service_charges<br>
+            <strong>Total Price:</strong> @Model.Total_Price<br>
+            <strong>Status:</strong> @Model.status<br><br>
+            <div class="text-center">
+                <a asp-action="GenerateWordDocument"  class="btn btn-success" asp-route-id="@Model.DeliverableId">Export to Word</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

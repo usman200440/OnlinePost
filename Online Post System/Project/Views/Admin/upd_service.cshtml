@@ -1,0 +1,46 @@
+﻿@model servicetype;
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<div class="breadcrumb-wrap mb-20">
+    <div class="d-md-flex d-block justify-content-between align-items-center">
+        <div class="left">
+            <h1>Charge</h1>
+        </div>
+        <div class="right">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index">Dashboard</a></li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">Create</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="col-xl-12 .col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-heading">
+            <span>Create</span>
+        </div>
+        <div class="panel-body">
+            <form class="row g-3" asp-action="upd_service" asp-controller="A_functionality">
+                <input asp-for="s_id" type="hidden" value="@Model.s_id">
+                <div class="col-md-6">
+                    <label asp-for="service_name" class="form-label">Service Name</label>
+                    <input asp-for="service_name" value="@Model.service_name" class="form-control" placeholder="Enter Service Name" required>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="service_charges" class="form-label">Service Charges</label>
+                    <input asp-for="service_charges" value="@Model.service_charges" min="0" class="form-control" placeholder="Enter Service Charges" required>
+                </div>
+
+                <br><br>
+                <div class="btn-box justify-content-end">
+                    <button type="submit" class="btn btn-primary">Update</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

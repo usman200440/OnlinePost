@@ -1,0 +1,102 @@
+﻿@using ONLINE_POST.Models.extras.join
+@model List<orders>
+@{
+    Layout = "~/Views/Shared/EmployeeLayout.cshtml";
+    int number = 1;
+}
+<div class="breadcrumb-wrap mb-20">
+    <div class="d-md-flex d-block justify-content-between align-items-center">
+        <div class="left">
+            <h1>Employee</h1>
+        </div>
+        <div class="right">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index">Dashboard</a></li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">Employee</li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">View</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="col-xl-12 col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-heading">
+            <span>View <span class="text-primary">All</span> Deliverables</span>
+        </div>
+
+        <div class="panel-body">
+
+            <div class="mb-3">
+                <label for="searchInput" class="form-label">Search:</label>
+                <input type="text" id="searchInput" class="form-control" placeholder="Type to search">
+            </div>
+
+            <hr>
+
+            <div class="table-responsive">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tracking Number</th>
+                            <th>Weight</th>
+                            <th>Contact Number</th>
+                            <th>Total Price</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var y in Model)
+                        {
+                            <tr class="tableRow">
+                                <td>@(number++)</td>
+                                <td>@y.Tracking_Number</td>
+                                <td>@Math.Round(y.Weight, 2) Kg</td>
+                                <td class="text-primary">@y.Contact_Number</td>
+                                <td>@y.Total_Price $</td>
+                                @if (y.status == "On_the_Way")
+                                {
+                                    <td class="bg-primary text-white">@y.status</td>
+                                }
+                                else if (y.status == "Pending")
+                                {
+                                    <td class="bg-info text-dark">@y.status</td>
+                                }
+                                else
+                                {
+                                    <td class="bg-success text-white">@y.status</td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#searchInput').on('input', function () {
+                var searchTerm = $(this).val().toLowerCase();
+
+                $('.tableRow').each(function () {
+                    var rowText = $(this).text().toLowerCase();
+
+                    if (rowText.includes(searchTerm)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });
+    </script>
+

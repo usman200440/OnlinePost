@@ -1,0 +1,969 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\ONLINE_POST.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ONLINE_POST.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\bootstrap-icon\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\bootstrap-icon\\bootstrap-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\bootstrap-icon\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\bootstrap-icon\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\bootstrap-icon\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\bootstrap-icon\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\css\\32px.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\32px.png"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\css\\animate.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\css\\font\\summernote.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\font\\summernote.eot"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\css\\font\\summernote.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\font\\summernote.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\css\\font\\summernote.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\font\\summernote.woff"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\css\\font\\summernote.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\font\\summernote.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\css\\jquery.dataTables.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\jquery.dataTables.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\css\\jquery.mCustomScrollbar.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\jquery.mCustomScrollbar.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\css\\responsive.bootstrap.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\responsive.bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\css\\sweetalert.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\sweetalert.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\css\\throbber.gif",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\throbber.gif"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\css\\toastify.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\toastify.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\403.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\403.png"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\404.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\404.png"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\500.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\500.png"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\avatar-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\avatar-10.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\avatar-11.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\avatar-12.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\avatar-13.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar-13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\avatar-14.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\avatar-2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\avatar-3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\avatar-4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\avatar-5.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\avatar-6.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\avatar-7.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\avatar-8.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\avatar-9.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\background.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\chevron-down-2.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\chevron-down-2.svg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\chevron-down.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\chevron-down.svg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-10.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-11.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-12.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-13.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-14.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-15.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-16.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-17.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-18.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-5.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-6.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-7.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-8.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\image-9.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\image-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\sort_asc.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\sort_asc.png"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\sort_both.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\sort_both.png"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\images\\sort_desc.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\sort_desc.png"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\apexcharts.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\apexcharts.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\bootstrap-modal.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\bootstrap-modal.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\chart-init.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\chart-init.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\chart-js-init.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\chart-js-init.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\chart-page.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\chart-page.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\chart.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\circle-progress.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\circle-progress.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\ckeditor.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\ckeditor.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\dataTables.responsive.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\dataTables.responsive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\datatables-init.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\datatables-init.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\datatables.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\datatables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\fullcalendar-init.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\fullcalendar-init.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\fullcalendar.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\fullcalendar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\jquery-3.6.0.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\jquery-3.6.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\jquery.mCustomScrollbar.concat.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\jquery.mCustomScrollbar.concat.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\sweetalert.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\sweetalert.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\text-editor.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\text-editor.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\tinymce.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\tinymce.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\toastify-init.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\toastify-init.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\js\\toastify-js.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\toastify-js.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\main\\_global.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\main\\_global.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\main\\_responsive.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\main\\_responsive.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\main\\_variable.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\main\\_variable.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_authentication.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_authentication.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_component_alert.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_component_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_component_badge.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_component_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_component_button.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_component_button.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_component_card.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_component_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_component_carousel.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_component_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_component_list_group.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_component_list_group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_component_progress.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_component_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_data_table.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_data_table.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_editor.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_editor.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_error.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_error.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_form_element.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_form_element.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_icons.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_mail.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_mail.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_table.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_table.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\pages\\_widget.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\pages\\_widget.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\sections\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\sections\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\sections\\_fixed_sidebar.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\sections\\_fixed_sidebar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\sections\\_main_content.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\sections\\_main_content.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\admin\\assets\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\auth\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\css\\style.css",
+      "PackagePath": "staticwebassets\\auth\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\ab1.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\ab1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\abcon.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\abcon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\about-1.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\about-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\about-2.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\about-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\auth.png",
+      "PackagePath": "staticwebassets\\auth\\img\\auth.png"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\background.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\carousel1.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\carousel1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\carousel2.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\carousel2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\con1.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\con1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\con2.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\con2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\haider.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\haider.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\haider1.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\haider1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\hamas.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\hamas.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\hamas1.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\hamas1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\project-1.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\project-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\project-2.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\project-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\project-3.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\project-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\project-4.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\project-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\project-5.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\project-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\project-6.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\project-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\sana1.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\sana1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\team-1.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\team-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\team-2.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\team-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\team-3.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\team-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\team-4.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\team-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\testimonial-1.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\testimonial-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\testimonial-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\testimonial-3.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\testimonial-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\testimonial-4.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\testimonial-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\usman.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\usman.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\img\\usman1.jpg",
+      "PackagePath": "staticwebassets\\auth\\img\\usman1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\js\\main.js",
+      "PackagePath": "staticwebassets\\auth\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\animate\\animate.css",
+      "PackagePath": "staticwebassets\\auth\\lib\\animate\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\animate\\animate.min.css",
+      "PackagePath": "staticwebassets\\auth\\lib\\animate\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\auth\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\auth\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\auth\\lib\\owlcarousel"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\auth\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\auth\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\auth\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\auth\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\auth\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\auth\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\auth\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\auth\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\auth\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\auth\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\waypoints\\links.php",
+      "PackagePath": "staticwebassets\\auth\\lib\\waypoints\\links.php"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\waypoints\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\auth\\lib\\waypoints\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\wow\\wow.js",
+      "PackagePath": "staticwebassets\\auth\\lib\\wow\\wow.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\auth\\lib\\wow\\wow.min.js",
+      "PackagePath": "staticwebassets\\auth\\lib\\wow\\wow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Usman\\Desktop\\Online Post System\\E_Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.ONLINE_POST.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.ONLINE_POST.props",
+      "PackagePath": "build\\ONLINE_POST.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ONLINE_POST.props",
+      "PackagePath": "buildMultiTargeting\\ONLINE_POST.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.ONLINE_POST.props",
+      "PackagePath": "buildTransitive\\ONLINE_POST.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

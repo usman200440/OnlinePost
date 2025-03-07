@@ -1,0 +1,103 @@
+﻿@using ONLINE_POST.Models.extras.join
+@model branch;
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+    var city = (IEnumerable<City>)TempData["city"];
+    var branch = (IEnumerable<branch_city>)TempData["branch"];
+    int number = 1;
+}
+@if (city != null)
+{
+    <div class="breadcrumb-wrap mb-20">
+        <div class="d-md-flex d-block justify-content-between align-items-center">
+            <div class="left">
+                <h1>Branch</h1>
+            </div>
+            <div class="right">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-action="Index">Dashboard</a></li>
+                        <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                        <li class="breadcrumb-item active" aria-current="page">Branch</li>
+                        <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                        <li class="breadcrumb-item active" aria-current="page">Create</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-12 .col-lg-12">
+        <div class="panel mb-10">
+            <div class="panel-heading">
+                <span>Create</span>
+            </div>
+            <div class="panel-body">
+                <form class="row g-3" asp-action="b_create" asp-controller="A_Functionality">
+                    <div class="col-md-6">
+                        <label for="inputEmail1" class="form-label">Branch</label>
+                        <input asp-for="b_name" class="form-control" placeholder="Enter Branch Name" required>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">City</label>
+                        <select id="inputState" name="city" class="form-select" required>
+                            <option value="" selected hidden>Choose...</option>
+                            @foreach (var c in city)
+                            {
+                                <option value="@c.c_id">@c.c_name</option>
+                            }
+                        </select>
+                    </div>
+                    <br><br>
+                    <div class="btn-box justify-content-end">
+                        <button type="submit" class="btn btn-primary">Create</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+
+<div class="col-xl-12 col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-heading">
+            <span>View Branches</span>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Branch</th>
+                            <th>City</th>
+                            <th colspan="2">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach(var b in branch)
+                        {
+                            <tr>
+                                <td>@(number++)</td>
+                                <td>@b.Branch</td>
+                                <td>@b.city_name</td>
+                                <td><a class="btn btn-danger text-white" href="#" onclick="confirmDelete('@b.b_id')">DELETE</a></td>
+                                <td><a class="btn btn-success text-white" asp-action="upd_branch" asp-controller="Admin" asp-route-id="@b.b_id">UPDATE</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function confirmDelete(branchId) {
+        var result = confirm("Are you sure you want to delete this branch?");
+        if (result) {
+            window.location.href = "/A_Functionality/del_branch/" + branchId; // Redirect to the delete action
+        }
+    }
+</script>

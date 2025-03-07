@@ -1,0 +1,60 @@
+﻿@model EmployeeInformation;
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+    var branch = (IEnumerable<branch>)TempData["branch"];
+}
+<div class="breadcrumb-wrap mb-20">
+    <div class="d-md-flex d-block justify-content-between align-items-center">
+        <div class="left">
+            <h1>Employee</h1>
+        </div>
+        <div class="right">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index">Dashboard</a></li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">Employee</li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">Appoint</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="col-xl-12 .col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-heading">
+            <span>Create</span>
+        </div>
+        <div class="panel-body">
+            <form class="row g-3" asp-action="e_create" asp-controller="A_functionality">
+                <div class="col-md-6">
+                    <label asp-for="EUserName" class="form-label">Username</label>
+                    <input asp-for="EUserName" class="form-control" placeholder="Username" required>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="EEmail" class="form-label">Email</label>
+                    <input asp-for="EEmail" class="form-control" placeholder="Email Address" required>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="EPassword" class="form-label">Password</label>
+                    <input asp-for="EPassword" class="form-control" placeholder="Password" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputState" class="form-label">Branch</label>
+                    <select id="inputState" name="branch" class="form-select" required>
+                        <option value="" selected hidden>Choose Branch...</option>
+                        @foreach(var b in branch){
+                          <option value="@b.b_id">@b.b_name</option>
+                        }
+                    </select>
+                </div>
+                <br><br>
+                <div class="btn-box justify-content-end">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

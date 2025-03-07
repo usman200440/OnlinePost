@@ -1,0 +1,77 @@
+﻿@using ONLINE_POST.Models.extras.join
+@model List<orders>
+@{
+    Layout = "~/Views/Shared/EmployeeLayout.cshtml";
+    int number = 1;
+}
+<div class="breadcrumb-wrap mb-20">
+    <div class="d-md-flex d-block justify-content-between align-items-center">
+        <div class="left">
+            <h1>Employee</h1>
+        </div>
+        <div class="right">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index">Dashboard</a></li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">Employee</li>
+                    <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">View</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="col-xl-12 col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-heading">
+            <span>View <span class="text-primary">On The Way</span> Deliverables</span>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tracking Number</th>
+                            <th>Weight</th>
+                            <th>Destination Address</th>
+                            <th>Sender Address</th>
+                            <th>Contact Number</th>
+                            <th>Package Type</th>
+                            <th>Total Price</th>
+                            <th>Status</th>
+                            <th colspan="2">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var y in Model)
+                        {
+                            <tr>
+                                <td>@(number++)</td>
+                                <td>@y.Tracking_Number</td>
+                                <td>@Math.Round(y.Weight, 2) Kg</td>
+                                <td>@y.DestinationAddress</td>
+                                <td>@y.SenderAddress</td>
+                                <td class="text-primary">@y.Contact_Number</td>
+                                <td>@y.package_type</td>
+                                <td>@y.Total_Price $</td>
+                                <td class="bg-primary text-white">@y.status</td>
+                                <form asp-action="onway_delivery">
+                                <td>
+                                    <select id="inputState" name="status" class="form-select" required>
+                                        <option value="Completed">Completed</option>
+                                    </select>
+                                </td>
+                                <input type="hidden" name="id" value="@y.DeliverableId">
+                                <td><input class="btn btn-success text-white" type="submit" value="UPDATE" /></td>
+                                </form>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+﻿@model branch;
+@{
+    var city = (IEnumerable<City>)TempData["city"];
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+@{
+    if (Model != null)
+    {
+      <div class="breadcrumb-wrap mb-20">
+        <div class="d-md-flex d-block justify-content-between align-items-center">
+            <div class="left">
+                <h1>Branch</h1>
+            </div>
+            <div class="right">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-action="Index">Dashboard</a></li>
+                        <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                        <li class="breadcrumb-item active" aria-current="page">Branch</li>
+                            <li class="breadcrumb-item"><i class="bi bi-caret-right"></i></li>
+                            <li class="breadcrumb-item active" aria-current="page">Update</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-12 .col-lg-12">
+        <div class="panel mb-10">
+            <div class="panel-heading">
+                <span>Update</span>
+            </div>
+            <div class="panel-body">
+                <form class="row g-3" asp-action="upd_branch" asp-controller="A_Functionality">
+                <input type="hidden" asp-for="b_id" value="@Model.b_id">
+                    <div class="col-md-6">
+                        <label for="inputEmail1" class="form-label">Branch</label>
+                            <input asp-for="b_name" value="@Model.b_name" class="form-control" placeholder="Enter Branch Name" required>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">City</label>
+                        <select id="inputState" name="city" class="form-select" required>
+                            <option value="" selected hidden>Choose...</option>
+                            @foreach (var c in city)
+                            {
+                                <option value="@c.c_id">@c.c_name</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="btn-box justify-content-end">
+                        <button type="submit" class="btn btn-primary">Update</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    }
+}

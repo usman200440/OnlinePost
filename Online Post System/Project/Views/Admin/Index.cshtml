@@ -1,0 +1,189 @@
+﻿@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+    var package = TempData["package"];
+    var user=TempData["user"];
+    var branch = TempData["branch"];
+    var emp = TempData["emp"];
+    var charge = TempData["charge"];
+    var s_type = TempData["s_type"];
+    var admin = (List<PersonalInformation>)TempData["admin"];
+    var number = 1;
+}
+<style>
+    .completed-payment,
+    .pending-payment {
+        text-align: center;
+        padding: 23px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        margin-bottom: 20px;
+    }
+
+        .completed-payment h1,
+        .pending-payment h1 {
+            font-size: 1.2em;
+            font-weight:bolder
+        }
+
+    .amount {
+        font-size: 1em; /* Adjust the font size of the amount */
+        display: block;
+        margin-top: 10px;
+        font-weight:bold
+    }
+
+
+    
+</style>
+
+
+ <div class="top-boxes mb-10">
+                <div class="row g-10">
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="part-icon bg-primary">
+                                    <i class="bi bi-bookmark-dash-fill"></i>
+                                </div>
+                                <div class="part-txt">
+                                    <p><span>Packages</span>@package</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="part-icon bg-info">
+                                    <i class="bi bi-person-fill"></i>
+                                </div>
+                                <div class="part-txt">
+                                    <p><span>Total Users</span>@user</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="part-icon bg-success">
+                                    <i class="bi bi-egg-fill"></i>
+                                </div>
+                                <div class="part-txt">
+                                    <p><span>Total Branches</span>@branch</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="part-icon bg-danger">
+                                    <i class="bi bi-person-fill"></i>
+                                </div>
+                                <div class="part-txt">
+                                    <p><span>Total Employee</span>@emp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+    <div class="row">
+
+    <div class="col-xl-4 col-lg-4 backcolor">
+        <div class="panel mb-10 content-center">
+            <div class="completed-payment">
+                <h1 style="font-size: 2em;" class="text-primary">@TempData["completed"] <span class="text-dark">$</span></h1>
+                <span class="amount">Completed Pays</span>
+            </div>
+        </div>
+        <div class="panel mb-10 content-center">
+            <div class="pending-payment">
+                <h1 style="font-size: 2em;" class="text-primary">@TempData["pending"] <span class="text-dark">$</span></h1>
+                <span class="amount">Pending Pays</span>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="col-xl-8 col-lg-8">
+           <div class="panel mb-10 content-center">
+             <div>
+                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+             </div>
+           </div>
+        </div>
+    </div>
+
+
+
+
+<div class="col-xl-12 col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-heading">
+            <span>View Admins</span>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var u in admin)
+                        {
+
+                            <tr>
+                                <td>@(number++)</td>
+                                <td>@u.PUserName</td>
+                                <td>@u.PEmail</td>
+                                <td>@u.status</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+       
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script>
+    const xValues = ["Branch", "Users", "Service Types", "Service Charges", "Packages"];
+    const yValues = [@branch, @user, @s_type, @charge, @package];
+    const barColors = ["green", "red", "blue", "orange", "brown"];
+
+    new Chart("myChart", {
+        type: "bar",
+        data: {
+            labels: xValues,
+            datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+            }]
+        },
+        options: {
+            legend: { display: false },
+            title: {
+                display: true,
+                text: "World Wine Production 2018"
+            }
+        }
+    });
+</script>

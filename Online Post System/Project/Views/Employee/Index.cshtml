@@ -1,0 +1,99 @@
+﻿@{
+    Layout = "~/Views/Shared/EmployeeLayout.cshtml";
+    var pending = TempData["pending"];
+    var onway = TempData["onway"];
+    var completed = TempData["completed"];
+    var overall = TempData["overall"];
+    var emp = (EmployeeInformation)TempData["emp"];
+    var branch = (branch)TempData["branch"];
+    var number = 1;
+}
+
+<div class="top-boxes mb-10">
+    <div class="row g-10">
+        <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="part-icon bg-primary">
+                        <i class="bi bi-bookmark-dash-fill"></i>
+                    </div>
+                    <div class="part-txt">
+                        <p><span>OverAll Orders</span>@overall</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="part-icon bg-info">
+                        <i class="bi bi-bookmark-dash-fill"></i>
+                    </div>
+                    <div class="part-txt">
+                        <p><span>Penging</span>@pending</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="part-icon bg-success">
+                        <i class="bi bi-bookmark-dash-fill"></i>
+                    </div>
+                    <div class="part-txt">
+                        <p><span>On The Way</span>@onway</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="part-icon bg-danger">
+                        <i class="bi bi-bookmark-dash-fill"></i>
+                    </div>
+                    <div class="part-txt">
+                        <p><span>Completed</span>@completed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-xl-12 col-lg-12">
+    <div class="panel mb-10">
+        <div class="panel-heading">
+            <span>View Admins</span>
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Branch</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                            <tr>
+                                <td>@(number++)</td>
+                                <td>@emp.EUserName</td>
+                                <td>@emp.EEmail</td>
+                                <td>@branch.b_name</td>
+                                <td>@emp.EPassword</td>
+                            </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
